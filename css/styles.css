@@ -69,6 +69,38 @@ select,textarea{
     width: 1158px;
 }
 
+/* Для телефона */
+.conteiner{
+    min-width: 480px;
+    max-width: 428px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px auto;
+
+    outline: 2px solid tomato;
+    outline-offset: -2px;
+}
+
+/* Для планшетов */
+@media screen and (min-width: 768px) {
+    .conteiner{
+        max-width: 720px;
+    }
+}
+
+/* Для ноутбука */
+
+@media screen and (min-width: 1200px) {
+    .conteiner{
+        max-width: 1158px;
+    }
+}
+
+
+{
+
+}
+
 img{
     display: block;
     min-width: 100%;
@@ -76,8 +108,15 @@ img{
 }
 
 .section{
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+@media screen and (min-width: 1200px) {
+    .section{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
 }
 
 .header{
@@ -301,15 +340,6 @@ img{
     overflow: hidden;
 }
 
-.box{
-    min-width: 264px;
-    margin-right: 24px;
-}
-
-.box:last-child{
-    margin-right: 0px;
-}
-
 .section.team{
     padding-top: 0px;
 }
@@ -325,12 +355,50 @@ img{
 }
 
 .future-list{
-    display: flex;
-    justify-content: space-between;
-
-    list-style: none;
-    margin: 0px;
+    text-align: center;
 }
+
+@media screen and (min-width: 768px) {
+    .future-list{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .future-list{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0;
+    }
+}
+
+.box{
+  min-width: 396px;
+  margin-bottom: 72px;
+}
+
+@media screen and (min-width: 768px) {
+    .box{
+
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .box{
+        min-width: 264px;
+        margin-right: 24px;
+    }
+}
+
+.box:last-child{
+    margin-right: 0px;
+}
+
 
 .future-blok{
     display: flex;
